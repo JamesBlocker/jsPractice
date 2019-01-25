@@ -13,23 +13,33 @@
 // document.getElementById("1").innerHTML = result;
 
 
-// triangle area -------------------------------------------------
+// // triangle area -------------------------------------------------
 
-function triArea(a,b,c) {
-    let p = (a + b + c) / 2;
-    let pa = p-a
-    let pb = p-b
-    let pc = p-c
-    let pabc = pa * pb * pc;
-    let result = Math.sqrt(p * pabc);  
-    // console.log(result);
-    // console.log(pabc, p, 24 * 9, Math.sqrt(216));
-    return result;
+// function triArea(a,b,c) {
+//     let p = (a + b + c) / 2;
+//     let pa = p-a
+//     let pb = p-b
+//     let pc = p-c
+//     let pabc = pa * pb * pc;
+//     let result = Math.sqrt(p * pabc);  
+//     // console.log(result);
+//     // console.log(pabc, p, 24 * 9, Math.sqrt(216));
+//     return result;
+// }
+
+// let final = triArea(5,6,7);
+
+// title shuffle
+function shuffleLetters() {
+    let s = document.getElementById("1").innerHTML;
+    let letters = s.split("");
+    let var1 = letters.shift();
+    letters.push(var1);
+    let result = letters.join('');
+    document.getElementById("1").innerHTML = result;
+    return result
 }
 
-console.log(triArea(5,6,7));
-let area = triArea(5,6,7);
-console.log(area);
+document.getElementById("1").innerHTML = "w3source";
 
-
-document.getElementById("1").innerHTML = area;
+var timer = setInterval(shuffleLetters, 500);
