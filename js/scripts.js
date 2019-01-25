@@ -59,25 +59,40 @@
 
 // }
 
-// random integer guess
-function getRandomInt(max) {
-    return Math.floor(Math.random() * Math.floor(max)) + 1;
-}
+// // random integer guess
+// function getRandomInt(max) {
+//     return Math.floor(Math.random() * Math.floor(max)) + 1;
+// }
 
-document.getElementById("1").innerHTML = "Guess a number between 1-10"
-const form = document.getElementById('form');
-const number = document.getElementById('number');
-form.onsubmit = submit;
+// document.getElementById("1").innerHTML = "Guess a number between 1-10"
+// const form = document.getElementById('form');
+// const number = document.getElementById('number');
+// form.onsubmit = submit;
 
-function submit(evt) {
-    let input = parseInt(document.getElementById("number").value);
-    let target = parseInt(getRandomInt(10));
-    if (input === target) {
-        document.getElementById("2").innerHTML = ""
-        document.getElementById("1").innerHTML = "Good Work!";
-    } else {
-        document.getElementById("2").innerHTML = "Not matched. The number was " + target;
-    }
-    console.log("!", target, "$", input);
-    event.preventDefault();
-}
+// function submit(evt) {
+//     let input = parseInt(document.getElementById("number").value);
+//     let target = parseInt(getRandomInt(10));
+//     if (input === target) {
+//         document.getElementById("2").innerHTML = ""
+//         document.getElementById("1").innerHTML = "Good Work!";
+//     } else {
+//         document.getElementById("2").innerHTML = "Not matched. The number was " + target;
+//     }
+//     console.log("!", target, "$", input);
+//     event.preventDefault();
+// }
+
+// Xmas Countdown
+let monthDaysTotal = [31,28,31,30,31,30,31,31,30,31,30,31];
+let d = new Date();
+let month = d.getMonth()
+let date = d.getDate();
+let monthsLeft = 11 - month;
+let daysLeft = 24 - date;
+if (daysLeft < 0) {
+    daysLeft = monthDaysTotal[month] - daysLeft;
+    console.log(monthDaysTotal[month], daysLeft, monthDaysTotal[month] - daysLeft);
+} 
+document.getElementById("1").innerHTML = "There are " + monthsLeft + " months and " + daysLeft + " days left until Xmas"
+
+console.log(month, date, monthsLeft, daysLeft, monthDaysTotal[month]);
