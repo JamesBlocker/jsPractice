@@ -1,4 +1,4 @@
-// // current date ----------------------------------------------
+// // 3. current date ----------------------------------------------
 // let d = new Date
 // function format(n){
 //     return n > 9 ? "" + n: "0" + n;
@@ -10,7 +10,7 @@
 // document.getElementById("1").innerHTML = result;
 
 
-// // triangle area -------------------------------------------------
+// // 4. triangle area -------------------------------------------------
 // function triArea(a,b,c) {
 //     let p = (a + b + c) / 2;
 //     let pa = p-a
@@ -24,7 +24,7 @@
 // }
 // let final = triArea(5,6,7);
 
-// // title shuffle ------------------------------------------------------------
+// // 5. title shuffle ------------------------------------------------------------
 // function shuffleLetters() {
 //     let s = document.getElementById("1").innerHTML;
 //     let letters = s.split("");
@@ -37,7 +37,7 @@
 // document.getElementById("1").innerHTML = "w3source";
 // var timer = setInterval(shuffleLetters, 500);
 
-// // leap year -----------------------------------------------------------------
+// // 6. leap year -----------------------------------------------------------------
 // let d = new Date();
 // let year = d.getFullYear();
 // function leapYear(y) {
@@ -59,7 +59,7 @@
 
 // }
 
-// // random integer guess
+// // 8. random integer guess
 // function getRandomInt(max) {
 //     return Math.floor(Math.random() * Math.floor(max)) + 1;
 // }
@@ -82,17 +82,34 @@
 //     event.preventDefault();
 // }
 
-// Xmas Countdown
-let monthDaysTotal = [31,28,31,30,31,30,31,31,30,31,30,31];
-let d = new Date();
-let month = d.getMonth()
-let date = d.getDate();
-let monthsLeft = 11 - month;
-let daysLeft = 24 - date;
-if (daysLeft < 0) {
-    daysLeft = monthDaysTotal[month] - daysLeft;
-    console.log(monthDaysTotal[month], daysLeft, monthDaysTotal[month] - daysLeft);
-} 
-document.getElementById("1").innerHTML = "There are " + monthsLeft + " months and " + daysLeft + " days left until Xmas"
+// // 9. Xmas Countdown
+// let monthDaysTotal = [31,28,31,30,31,30,31,31,30,31,30,31];
+// let d = new Date();
+// let month = d.getMonth()
+// let date = d.getDate();
+// let monthsLeft = 11 - month;
+// let daysLeft = 24 - date;
+// if (daysLeft < 0) {
+//     daysLeft = monthDaysTotal[month] - daysLeft;
+//     console.log(monthDaysTotal[month], daysLeft, monthDaysTotal[month] - daysLeft);
+// } 
+// document.getElementById("1").innerHTML = "There are " + monthsLeft + " months and " + daysLeft + " days left until Xmas"
 
-console.log(month, date, monthsLeft, daysLeft, monthDaysTotal[month]);
+// console.log(month, date, monthsLeft, daysLeft, monthDaysTotal[month]);
+// // lost interrest moved on
+
+
+// 10. multiply divide 
+function multiNums() {
+    let num1 = document.getElementById("num1").value;
+    let num2 = document.getElementById("num2").value;
+    let result = num1 * num2;
+    alert(result)
+}
+
+function diviNums() {
+    let num1 = document.getElementById("num1").value;
+    let num2 = document.getElementById("num2").value;
+    let result = num1 / num2;
+    alert(result)
+}
