@@ -99,17 +99,31 @@
 // // lost interrest moved on
 
 
-// 10. multiply divide 
-function multiNums() {
-    let num1 = document.getElementById("num1").value;
-    let num2 = document.getElementById("num2").value;
-    let result = num1 * num2;
-    alert(result)
-}
+// // 10. multiply divide 
+// function multiNums() {
+//     let num1 = document.getElementById("num1").value;
+//     let num2 = document.getElementById("num2").value;
+//     let result = num1 * num2;
+//     alert(result)
+// }
 
-function diviNums() {
-    let num1 = document.getElementById("num1").value;
-    let num2 = document.getElementById("num2").value;
-    let result = num1 / num2;
-    alert(result)
-}
+// function diviNums() {
+//     let num1 = document.getElementById("num1").value;
+//     let num2 = document.getElementById("num2").value;
+//     let result = num1 / num2;
+//     alert(result)
+// }
+
+// // 11. temperature converter
+// function celsiusToFahren() {
+//     let c = document.getElementById("num1").value;
+//     result = c * 9 / 5 + 32
+
+//     alert(result);
+// }
+
+// function fahrenToCelsius() {
+//     let f = document.getElementById("num2").value;
+//     result = (f - 32) * 5/9
+//     alert(result);
+// }
