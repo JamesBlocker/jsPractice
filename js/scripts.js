@@ -127,3 +127,6 @@
 //     result = (f - 32) * 5/9
 //     alert(result);
 // }
+
+// // 12. website URL
+// console.log(document.URL);
