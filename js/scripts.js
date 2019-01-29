@@ -130,3 +130,5 @@
 
 // // 12. website URL
 // console.log(document.URL);
+
+// 15. Difference of 13
