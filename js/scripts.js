@@ -151,9 +151,15 @@
 //     return (result > 19) ? alert(result * 3) : alert(result);
 // }
 
-// 18. fiftyOrNot
-function fiftyOrNot() {
+// // 18. fiftyOrNot
+// function fiftyOrNot() {
+//         let x = parseInt(document.getElementById("num1").value);
+//         let y = parseInt(document.getElementById("num2").value);
+//         return (x === 50 || y === 50 || x + y === 50) ? alert("true") : alert("false");
+// }
+
+// 19. Four Hundred Club
+function fourHundredClub() {
         let x = parseInt(document.getElementById("num1").value);
-        let y = parseInt(document.getElementById("num2").value);
-        return (x === 50 || y === 50 || x + y === 50) ? alert("true") : alert("false");
+        return (x >= 90 && x <= 110 || x >= 390 &&  x <= 410) ? alert("true") : alert("false");
 }
