@@ -164,9 +164,15 @@
 //         return (x >= 90 && x <= 110 || x >= 390 &&  x <= 410) ? alert("true") : alert("false");
 // }
 
-// 20. Positive or Negative
-function posAndNeg() {
-        let x = parseInt(document.getElementById("num1").value);
-        let y = parseInt(document.getElementById("num2").value);  
-        return (x > 0 && y < 0 || y > 0 && x < 0) ? alert("true") : alert("false");
+// // 20. Positive or Negative
+// function posAndNeg() {
+//         let x = parseInt(document.getElementById("num1").value);
+//         let y = parseInt(document.getElementById("num2").value);  
+//         return (x > 0 && y < 0 || y > 0 && x < 0) ? alert("true") : alert("false");
+// }
+
+// 21. Py Contest
+function pyContest() {
+        let x = document.getElementById("num1").value;
+        return (x.slice(0,2) === "Py") ? alert(x) : alert("Py" + x)
 }
