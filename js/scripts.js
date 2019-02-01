@@ -131,8 +131,15 @@
 // // 12. website URL
 // console.log(document.URL);
 
-// 15. Difference of 13
-function diffThirteen() {
-    let n = document.getElementById("num1").value;
-    return (n > 13) ? alert(2 * Math.abs(13 - n)) : alert(13 - n)
+// // 15. Difference of 13
+// function diffThirteen() {
+//     let n = document.getElementById("num1").value;
+//     return (n > 13) ? alert(2 * Math.abs(13 - n)) : alert(13 - n)
+// }
+
+// 16. Add or Equal
+function addOrEven() {
+    let x = parseInt(document.getElementById("num1").value);
+    let y = parseInt(document.getElementById("num2").value);
+    return (x === y) ? alert(x * 6) : alert(x + y)
 }
