@@ -158,8 +158,15 @@
 //         return (x === 50 || y === 50 || x + y === 50) ? alert("true") : alert("false");
 // }
 
-// 19. Four Hundred Club
-function fourHundredClub() {
+// // 19. Four Hundred Club
+// function fourHundredClub() {
+//         let x = parseInt(document.getElementById("num1").value);
+//         return (x >= 90 && x <= 110 || x >= 390 &&  x <= 410) ? alert("true") : alert("false");
+// }
+
+// 20. Positive or Negative
+function posAndNeg() {
         let x = parseInt(document.getElementById("num1").value);
-        return (x >= 90 && x <= 110 || x >= 390 &&  x <= 410) ? alert("true") : alert("false");
+        let y = parseInt(document.getElementById("num2").value);  
+        return (x > 0 && y < 0 || y > 0 && x < 0) ? alert("true") : alert("false");
 }
