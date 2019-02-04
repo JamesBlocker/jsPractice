@@ -196,3 +196,13 @@ function charReverse() {
         arr1.push(firstChar);
         alert(arr1.join(''))
 }
+
+// 24. charsAdd
+function charsAdd() {
+        let x = document.getElementById("num1").value.split('');
+        let firstChar = x[0];
+        x.push(firstChar);
+        x.unshift(firstChar);
+        result = x.join('');
+        return alert(result);
+}
