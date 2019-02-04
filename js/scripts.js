@@ -213,14 +213,21 @@ function charReverse() {
 //         return (y % 3 === 0 || y % 7 === 0) ? alert("True") : alert("False");
 // }
 
-// 26. Last Three Chars
-function lastThreeChars() {
-        let x = document.getElementById("num1").value.split('');
-        if (x.length >= 3) {
-                let lastThree = x.slice(x.length - 3)
-                x.push(lastThree)
-                x.unshift(lastThree).join('')
-                return alert(x)
-        }
-        return alert("Need at least 3 letters");
+// // 26. Last Three Chars
+// function lastThreeChars() {
+//         let x = document.getElementById("num1").value.split('');
+//         if (x.length >= 3) {
+//                 let lastThree = x.slice(x.length - 3)
+//                 x.push(lastThree)
+//                 x.unshift(lastThree)
+//                 return alert(x)
+//         }
+//         return alert("Need at least 3 letters");
+// }
+
+// 27. Java First
+function javaFirst() {
+        let x = document.getElementById("num1").value;
+        let firstFour = x.slice(0,4);
+        return (firstFour === "Java") ? alert("Java Baby") : alert("Where's the Java?");
 }
