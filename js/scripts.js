@@ -197,12 +197,18 @@ function charReverse() {
         alert(arr1.join(''))
 }
 
-// 24. charsAdd
-function charsAdd() {
-        let x = document.getElementById("num1").value.split('');
-        let firstChar = x[0];
-        x.push(firstChar);
-        x.unshift(firstChar);
-        result = x.join('');
-        return alert(result);
+// // 24. charsAdd
+// function charsAdd() {
+//         let x = document.getElementById("num1").value.split('');
+//         let firstChar = x[0];
+//         x.push(firstChar);
+//         x.unshift(firstChar);
+//         result = x.join('');
+//         return alert(result);
+// }
+
+// 25. Divisible by 3 or 7
+function divByThreeOrSeven() {
+        let y = parseInt(document.getElementById("num2").value);
+        return (y % 3 === 0 || y % 7 === 0) ? alert("True") : alert("False");
 }
