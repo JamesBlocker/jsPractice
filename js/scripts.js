@@ -177,11 +177,22 @@
 //         return (x.slice(0,2) === "Py") ? alert(x) : alert("Py" + x)
 // }
 
-// 22. Character Remove
-function charRemove() {
+// // 22. Character Remove
+// function charRemove() {
+//         let x = document.getElementById("num1").value;
+//         let y = parseInt(document.getElementById("num2").value); 
+//         let arr = x.split('')
+//         arr.splice(y, 1);
+//         alert(arr.join(''));
+// }
+
+// 23. Character Reverse
+function charReverse() {
         let x = document.getElementById("num1").value;
-        let y = parseInt(document.getElementById("num2").value); 
-        let arr = x.split('')
-        arr.splice(y, 1);
-        alert(arr.join(''));
+        let arr1 = x.split('');
+        let firstChar = arr1.shift();
+        let lastChar = arr1.pop();
+        arr1.unshift(lastChar);
+        arr1.push(firstChar);
+        alert(arr1.join(''))
 }
