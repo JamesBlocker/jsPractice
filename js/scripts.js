@@ -171,8 +171,17 @@
 //         return (x > 0 && y < 0 || y > 0 && x < 0) ? alert("true") : alert("false");
 // }
 
-// 21. Py Contest
-function pyContest() {
+// // 21. Py Contest
+// function pyContest() {
+//         let x = document.getElementById("num1").value;
+//         return (x.slice(0,2) === "Py") ? alert(x) : alert("Py" + x)
+// }
+
+// 22. Character Remove
+function charRemove() {
         let x = document.getElementById("num1").value;
-        return (x.slice(0,2) === "Py") ? alert(x) : alert("Py" + x)
+        let y = parseInt(document.getElementById("num2").value); 
+        let arr = x.split('')
+        arr.splice(y, 1);
+        alert(arr.join(''));
 }
