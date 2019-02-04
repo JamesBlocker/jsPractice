@@ -219,7 +219,7 @@ function lastThreeChars() {
         if (x.length >= 3) {
                 let lastThree = x.slice(x.length - 3)
                 x.push(lastThree)
-                x.unshift(lastThree)
+                x.unshift(lastThree).join('')
                 return alert(x)
         }
         return alert("Need at least 3 letters");
