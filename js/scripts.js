@@ -207,8 +207,20 @@ function charReverse() {
 //         return alert(result);
 // }
 
-// 25. Divisible by 3 or 7
-function divByThreeOrSeven() {
-        let y = parseInt(document.getElementById("num2").value);
-        return (y % 3 === 0 || y % 7 === 0) ? alert("True") : alert("False");
+// // 25. Divisible by 3 or 7
+// function divByThreeOrSeven() {
+//         let y = parseInt(document.getElementById("num2").value);
+//         return (y % 3 === 0 || y % 7 === 0) ? alert("True") : alert("False");
+// }
+
+// 26. Last Three Chars
+function lastThreeChars() {
+        let x = document.getElementById("num1").value.split('');
+        if (x.length >= 3) {
+                let lastThree = x.slice(x.length - 3)
+                x.push(lastThree)
+                x.unshift(lastThree)
+                return alert(x)
+        }
+        return alert("Need at least 3 letters");
 }
