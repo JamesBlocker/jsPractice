@@ -186,16 +186,16 @@
 //         alert(arr.join(''));
 // }
 
-// 23. Character Reverse
-function charReverse() {
-        let x = document.getElementById("num1").value;
-        let arr1 = x.split('');
-        let firstChar = arr1.shift();
-        let lastChar = arr1.pop();
-        arr1.unshift(lastChar);
-        arr1.push(firstChar);
-        alert(arr1.join(''))
-}
+// // 23. Character Reverse
+// function charReverse() {
+//         let x = document.getElementById("num1").value;
+//         let arr1 = x.split('');
+//         let firstChar = arr1.shift();
+//         let lastChar = arr1.pop();
+//         arr1.unshift(lastChar);
+//         arr1.push(firstChar);
+//         alert(arr1.join(''))
+// }
 
 // // 24. charsAdd
 // function charsAdd() {
@@ -225,9 +225,14 @@ function charReverse() {
 //         return alert("Need at least 3 letters");
 // }
 
-// 27. Java First
-function javaFirst() {
-        let x = document.getElementById("num1").value;
-        let firstFour = x.slice(0,4);
-        return (firstFour === "Java") ? alert("Java Baby") : alert("Where's the Java?");
+// // 27. Java First
+// function javaFirst() {
+//         let x = document.getElementById("num1").value;
+//         let firstFour = x.slice(0,4);
+//         return (firstFour === "Java") ? alert("Java Baby") : alert("Where's the Java?");
+// }
+
+// 28. Numbers Inclusive
+function numsInclusive() {
+        
 }
