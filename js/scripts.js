@@ -234,5 +234,12 @@
 
 // 28. Numbers Inclusive
 function numsInclusive() {
-        
+    let x = parseInt(document.getElementById("num1").value);
+    let y = parseInt(document.getElementById("num2").value);
+        if (x >= 50 && x <= 99 ) {
+            return alert("In the zone!");
+        } else if (y >= 50 && y <= 99) {
+            return alert("In the zone!!");
+        }
+    return alert("Not so much");
 }
