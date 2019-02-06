@@ -232,14 +232,27 @@
 //         return (firstFour === "Java") ? alert("Java Baby") : alert("Where's the Java?");
 // }
 
-// 28. Numbers Inclusive
-function numsInclusive() {
+// // 28. Numbers Inclusive
+// function numsInclusive() {
+//     let x = parseInt(document.getElementById("num1").value);
+//     let y = parseInt(document.getElementById("num2").value);
+//         if (x >= 50 && x <= 99 ) {
+//             return alert("In the zone!");
+//         } else if (y >= 50 && y <= 99) {
+//             return alert("In the zone!!");
+//         }
+//     return alert("Not so much");
+// }
+
+// 29. Three Number Check
+function tripleCheck() {
     let x = parseInt(document.getElementById("num1").value);
     let y = parseInt(document.getElementById("num2").value);
-        if (x >= 50 && x <= 99 ) {
-            return alert("In the zone!");
-        } else if (y >= 50 && y <= 99) {
-            return alert("In the zone!!");
-        }
-    return alert("Not so much");
+    let z = parseInt(document.getElementById("num3").value);
+
+    function inRange(n) {
+        return (n >= 50 && n <= 99) ? true : false;
+    }
+
+    return (inRange(x) || inRange(y) || inRange(z)) ? alert("true") : alert("false");
 }
