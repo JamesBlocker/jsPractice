@@ -244,15 +244,23 @@
 //     return alert("Not so much");
 // }
 
-// 29. Three Number Check
-function tripleCheck() {
-    let x = parseInt(document.getElementById("num1").value);
-    let y = parseInt(document.getElementById("num2").value);
-    let z = parseInt(document.getElementById("num3").value);
+// // 29. Three Number Check
+// function tripleCheck() {
+//     let x = parseInt(document.getElementById("num1").value);
+//     let y = parseInt(document.getElementById("num2").value);
+//     let z = parseInt(document.getElementById("num3").value);
 
-    function inRange(n) {
-        return (n >= 50 && n <= 99) ? true : false;
-    }
+//     function inRange(n) {
+//         return (n >= 50 && n <= 99) ? true : false;
+//     }
 
-    return (inRange(x) || inRange(y) || inRange(z)) ? alert("true") : alert("false");
-}
+//     return (inRange(x) || inRange(y) || inRange(z)) ? alert("true") : alert("false");
+// }
+
+// // 30. Script Check
+// function scriptCheck() {
+//     let x = document.getElementById("num1").value.split('');
+//     let substring = x.slice(4,10).join('');
+//     return (substring == "Script") ? alert("true") : alert(x.splice(4, 0, "Script").join());
+    
+// }
