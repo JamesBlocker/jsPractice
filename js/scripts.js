@@ -264,3 +264,17 @@
 //     return (substring == "Script") ? alert("true") : alert(x.splice(4, 0, "Script").join());
     
 // }
+
+// 31. Largest of Three Numbers
+function largestThree() {
+    let x = parseInt(document.getElementById('num1').value);
+    let y = parseInt(document.getElementById('num2').value);
+    let z = parseInt(document.getElementById('num3').value);
+
+    if (x > y && x > z) {
+        return alert('The first answer is largest at ' + x);
+    } else if (y > x && y > z) {
+        return alert('The second answer is largest at ' + y);
+    }
+    return alert('The third answer is largest at ' + z);
+}
