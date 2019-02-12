@@ -279,9 +279,18 @@
 //     return alert('The third answer is largest at ' + z);
 // }
 
-// 32. Closest to 100
-function closestTo100(){
-    let x = Math.abs(100 - parseInt(document.getElementById('num1').value));
-    let y = Math.abs(100 - parseInt(document.getElementById('num2').value));
-    return (x > y) ? alert("answer 2 is closest to 100") : alert("answer 1 is closest to 100");
+// // 32. Closest to 100
+// function closestTo100(){
+//     let x = Math.abs(100 - parseInt(document.getElementById('num1').value));
+//     let y = Math.abs(100 - parseInt(document.getElementById('num2').value));
+//     return (x > y) ? alert("answer 2 is closest to 100") : alert("answer 1 is closest to 100");
+// }
+
+// 33. In Range
+function inRange() {
+    let x = parseInt(document.getElementById('num1').value);
+    let y = parseInt(document.getElementById('num2').value);
+    return (x >= 40 && x <=60 || x >= 70 && x <= 100 || y >= 40 && y <=60 || y >= 70 && y <= 100)
+    ? alert("Hit")
+    : alert("Miss");
 }
